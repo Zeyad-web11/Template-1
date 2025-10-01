@@ -215,38 +215,6 @@ max-width: 100%;
     animation-fill-mode: forwards;
 }
 
-.features .feat1 {
-    opacity: -10;
-}
-
-.features .feat2 {
-    opacity: -10;
-animation-delay: 0.25s;
-
-}
-
-.features .feat3  {
-    opacity: -10;
-animation-delay: 0.5s;
-
-}
-
-@keyframes feauters {
-from {
-    opacity: -10;
-    transform: translatey(100px);
-}
-
-
-    to {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
-
-    
-}
-
-
 .features .feat i {
     color: var(--main-color);
 }
@@ -290,46 +258,6 @@ from {
 .services {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
-}
-
-.services .col .srv-1,
-.services .col .srv-2,
-.services .col .srv-3,
-.services .col .srv-4,
-.services .image .srv-5 {
-    opacity: 0; 
-    transform: translateY(50px); 
-    animation-name: services;
-    animation-duration: 0.7s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-}
-
-.services .col .srv-1 {
-    animation-delay: 0.2s;
-}
-
-.services .col .srv-2 {
-    animation-delay: 0.4s;
-}
-
-.services .col .srv-3 {
-    animation-delay: 0.6s;
-}
-
-.services .col .srv-4 {
-    animation-delay: 0.8s;
-}
-
-.services .image .srv-5 {
-    animation-delay: 1s;
-}
-
-@keyframes services {
-    to {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
 }
 
 .services .services-content {
@@ -456,11 +384,6 @@ line-height: 1.6;
     position: relative;
     width: 250px;
     height: 375px;
-    /* Animation for the image */
-    opacity: 0;
-    transform: translateY(50px);
-    animation: about-fade-in-up 0.8s ease-out forwards;
-    animation-delay: 0.2s;
 }
  .About .About-content .image img{
 max-width: 100%;
@@ -506,52 +429,24 @@ position: absolute;
 
 .About .About-content .text {
     flex-basis: calc(100% - 500px);
-    /* Animation is applied to children elements */
-}
-
-.About .About-content .text p,
-.About .About-content .text hr {
-    /* Initial state for animation */
-    opacity: 0;
-    transform: translateX(-50px);
-    /* Common animation properties */
-    animation: about-fade-in-left 0.7s ease-out forwards;
 }
 
 .About .About-content .text p:first-of-type {
-    animation-delay: 0.4s; /* Appears after the image */
     font-weight: 800;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
 .About .About-content .text hr {
-    animation-delay: 0.6s; /* Appears after the first paragraph */
     display: inline-block;
     border-color: var(--main-color);
     width: 50%;
 }
 
 .About .About-content .text p:last-of-type {
-    animation-delay: 0.8s; /* Appears after the horizontal rule */
     font-weight: 500;
     line-height: 1.6;
     color: #827d7d;
-}
-
-/* Keyframes for the About section animations */
-@keyframes about-fade-in-up {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes about-fade-in-left {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
 }
 
 .contact {
@@ -559,38 +454,6 @@ position: absolute;
     padding-bottom: var(--section-padding);
     background-color: var(--section-background);
 }
-
-/* Animation for Contact Section Elements */
-.contact .special-heading,
-.contact .special-heading + p,
-.contact .info .label,
-.contact .info .link,
-.contact .info .social {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: contact-fade-in-up 0.7s ease-out forwards;
-}
-.contact .special-heading { animation-delay: 0.2s; }
-.contact .special-heading + p { animation-delay: 0.4s; }
-.contact .info .label { animation-delay: 0.6s; }
-.contact .info .link { animation-delay: 0.8s; }
-.contact .info .social { animation-delay: 1.0s; }
-@keyframes contact-fade-in-up {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.portfolio .card {
-    background-color: white;
-    opacity: 0;
-    transform: translateY(50px);
-    animation: portfolio-fade-in 0.6s ease-out forwards;
-}
-.portfolio .card:nth-child(2) { animation-delay: 0.2s; }
-.portfolio .card:nth-child(3) { animation-delay: 0.4s; }
-@keyframes portfolio-fade-in { to { opacity: 1; transform: translateY(0); } }
 
 .contact .info {
         padding-top: var(--section-padding);
